@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title> Bai tap OOP </title>
+        <script src="jquery.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="xuly.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="layout.css"/>
+
+    </head>
+    <body>
+        <h1 > THÔNG TIN SINH VIÊN</h1>
+        <div>
+            <form action="">
+
+                <label for="dsnv">List sinh vien</label>
+                <select id="dsnv" name="dsnv" >
+                    <option value="-1" >Danh sách sinh viên</option>
+                </select>
+
+                <label for="idname">Your Identified</label>
+                <input type="text" id="idname" name="idname" placeholder="Your id...">
+                
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                <input type="hidden" id="kt" value="{{check0}}"> 
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+                <label for="gender">Gender</label><br>
+                <input type="radio" id="gender" name="gender" value="Male" checked> Male
+                <input type="radio" id="gender" name="gender" value="Female"> Female
+                <input type="radio" id="gender" name="gender" value="Other"> Other<br><br>
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Your country...">
+
+                <label for="bday">Birthday</label>
+                <input type="text" id="bday" name="birthday" placeholder="Your birthday...">
+                
+  
+                <input type="submit" value="ADD" id="btn_add">
+                <input type="submit" value="UPDATE" id="btn_update">
+                <input type="submit" value="DELETE" id="btn_delete">
+                <input type="submit" value="CLEAR" id="btn_clear">
+            </form>
+        </div>
+
+        <h1 > CHUYỂN ĐỔI CƠ SỐ</h1>
+        <div>
+            <form action="">
+
+                
+                <label for="coso2">CƠ SỐ 2</label>
+                <input type="text" id="coso2" name="coso2" placeholder="cơ số 2...">
+                
+                <label for="coso10">CƠ SỐ 10</label>
+                <input type="text" id="coso10" name="coso10" placeholder="cơ số 10...">
+
+                <label for="coso16">CƠ SỐ 16</label>
+                <input type="text" id="coso16" name="coso16" placeholder="cơ số 16...">
+
+                <input type="submit" value="CONVERT" id="btn_convert">
+                <input type="submit" value="CLEAR" id="btn_clear_number">
+            </form>
+        </div>
+
+    </body>
+</html>
